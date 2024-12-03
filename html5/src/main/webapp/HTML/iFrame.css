@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+#id {
+	width : 700px;
+	
+}
+
+.nav {
+	background-color:gray;
+	list-style: none;
+	text-align: center;
+	line-height: 40px;
+}

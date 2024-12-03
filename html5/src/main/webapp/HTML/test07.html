@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>form-1</title>
+	</head>
+	<body>
+	<nav>
+	<a href="test07.html"><input type="button" value="테스트7"></a>
+	<a href="test07_1.html"><input type="button" value="테스트7-1"></a>
+	</nav>
+		<h1>form-1 (form 요소들)</h1>
+		<hr>
+		<hr>
+			<form action="test.jsp" method="post"> <!-- post는 전달하는 방식? -->
+			<h3>1. input type="text" 주관식. 한줄 글상자</h3>
+			<p>상자의 길이는 "size"로, 입력값의 최대길이 제한은 "maxlength"로</p>
+			<label for="id">아이디</label> <input type="text" value="아이디를 입력하세요" id="id" size="14">
+			<label for="nick">nick</label> <input type="text" id="nick" maxlength="10">
+		<hr>
+			<h3>2. input type="password" 주관식. 암호 글상자</h3>
+			<label for="pw">비밀번호</label> <input type="password" id="pw" size="14" maxlength="14">
+		<hr>
+			<h3>3. input type="checkbox" 다중 선택형 객관식. 체크박스</h3>
+			<p>복습이 필요한 과목은?<br>
+			<label><input type="checkbox"> WEB </label>
+			<label><input type="checkbox" checked> JAVA </label>
+			<label><input type="checkbox"> JSP </label>
+			<label><input type="checkbox"> DB </label>
+			</p>
+		<hr> 
+			<h3>공간절약형 객관식, 펼침목록(드롭다운리스트)</h3>
+			<p> 등교에 걸리는 시간은?<br>
+			다중 선택형 박스가 되려면 select multiple<br>
+				<select multiple>
+				<option disabled>등교 시간</option>
+				<option>10분이내</option>
+				<option>10분 ~ 30분</option>
+				<option selected>30분 ~ 1시간</option>
+				<option selected>1시간 ~ 1시간 30분</option>
+				<option>1시간 30분 ~ 2시간</option>
+				<option>2시간 이상</option>
+				</select>
+			</p>
+		<hr> 
+			<h3>형태만 박스가 되려면</h3>
+			<p> select size="" > 대신 다중선택안됨 <br>
+				<select size="1">
+				<option disabled>등교 시간</option>
+				<option>10분이내</option>
+				<option>10분 ~ 30분</option>
+				<option selected>30분 ~ 1시간</option>
+				<option selected>1시간 ~ 1시간 30분</option>
+				<option>1시간 30분 ~ 2시간</option>
+				<option>2시간 이상</option>
+				</select>
+			</p>
+		<hr> 
+			<h3>그룹화 박스가 되려면</h3>
+			<p> optgroup label=""></optgroup><br>
+				<select>
+				<optgroup label="A">
+				<option disabled>등교 시간</option>
+				<option>10분이내</option>
+				<option>10분 ~ 30분</option>
+				<option>30분 ~ 1시간</option></optgroup>
+				<optgroup label="B">
+				<option>1시간 ~ 1시간 30분</option>
+				<option>1시간 30분 ~ 2시간</option>
+				<option>2시간 이상</option></optgroup>
+				</select>
+			</p>
+		<hr>
+			<h3>4. input type="radio" 단일 선택형 객관식. 라디오</h3>
+			<p>단일 선택이 되려면 name의 값을 서로 일치 시킴<br>		
+			<label><input type="radio" name="aa"> 남자 </label>
+			<label><input type="radio" name="aa"> 여자 </label>
+			</p>
+		<hr>
+			<p>value=""로 버튼의 글자를 변경 가능</p>
+			<h3> input type="submit" 전송버튼</h3>
+			<input type="submit">
+			<h3> input type="reset" 초기화버튼</h3>
+			<input type="reset">
+			<h3> input type="button" 일반버튼</h3>
+			<input type="button" value="버튼" onclick="alert('돌아가기!')">
+			<h3> input type="image" 전송용 이미지</h3>
+			<p> src로 이미지 경로 지정<br>
+			<input type="image" src="./download/jpg/1.jpg" width="100">
+			</p>
+			<h3> button ... /button 전송용</h2>
+			<button>전송 버튼</button>
+			<p>초기화 하는 버튼 type="reset"</p>
+			<button type="reset"><b>취소 버튼</b></button>
+			<button type="button" onclick="history.back()"><img src="./download/png/logo.png"></button>
+		<hr>
+			<h3> 주관식. 큰 글상자</h3>
+			<textarea rows="10" cols="50"></textarea>
+
+		<hr>
+			<h3>7. input type="hidden" 보이지 않는 정보 전송용</h3>
+			<p> <br>	
+			<input type="hidden" value="A">
+			</p>
+		<hr>
+			<h3>8. input type="file" 파일 전송용</h3>	
+			<label> 증명사진 <input type="file"></label>
+			
+		</form>
+
+
+	</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>iframe</title>
+<link rel="stylesheet" href="iFrame.css">
+</head>
+<body>
+	<!-- 주석단축키 ctrl + shift + /  -->
+	<!-- ctrl + F11 = preview -->
+	<h1>iframe - 독립된 영역</h1>
+	<h4><p>&lt;iframe src="보여질 내용(경로)" width="" height=""&gt;iframe 미지원 브라우저 사용자용 메시지&lt;/iframe&gt;</p></h4>
+	<p><iframe id="id" src="https://daum.net"></iframe>
+	
+	<h2>iframe 안에 보여질 수 있는 종류</h2>
+	<ul>
+		<li>URL<br><iframe id="id" src="https:itwillbs.co.kr"></iframe></li>
+		<li>웹페이지(*.htm/*.html)<br><iframe id="id" src="./HTML/index.htm"></iframe></li>
+		<li>이미지(*.gif/*.jpg/*.png)<br><iframe id="id" src="./download/jpg/1.jpg"></iframe></li>
+		<li>동영상(*.webm/*.ogg/*.mp4)<br><iframe id="id" src="./download/tiny.mp4"></iframe></li>
+		<li>텍스트파일(*.txt)<br><iframe id="id" src="./HTML/test04.txt"></iframe></li>
+	</ul>
+	<hr>
+	<p>iframe을 구별할 수 있는 name의 값을 주고 그 name의 값을 target의 값으로 지정</p>
+	<h4>&lt;a href="" target="abc"&gt; &lt;a&gt;</h4>
+	<h4>&lt;iframe src="경로" name="abc"&gt; &lt;a&gt;</h4>
+	
+	<h2>iframe 안에 링크 열기</h2>
+	<nav>
+		<a href="./HTML/test04.txt" target="if-html">test04</a>
+		<a href="./HTML/test05.html" target="blank">test05</a>
+		<a href="./HTML/test06.html" target="blank">test06</a>
+	</nav>
+	<iframe src="./HTML/test07.html" width="600" height="400" name="if-html"></iframe>
+
+
+
+
+
+<h1>-----------------------------------------------------------------</h1>
+<iframe src="./download/jpg/1.jpg" width="600" height="400" name="if_test"></iframe>
+<nav>
+<ul class="nav">
+<li><a href="./download/jpg/2.jpg" target="if_test">photo-01</a></li>
+<li><a href="./download/jpg/3.jpg" target="if_test">photo-02</a></li>
+<li><a href="./download/gif/1166_128.gif" target="if_test">photo-03</a></li>
+<li><a href="./download/gif/5873_128.gif" target="if_test">photo-04</a></li>
+</ul>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

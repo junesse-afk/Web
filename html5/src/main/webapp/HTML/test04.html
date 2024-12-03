@@ -1,0 +1,106 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>테이블</title>
+		<style type="text/css" rel="stylesheet">
+			table, th, td {border:1px solid #039;}
+		</style>
+	</head>
+	<body>
+		<h1>테이블 만들기</h1>
+		<ul>
+		<li>table - 표를 구성하는 태그</li>
+		<li>tr - 줄을 구성하는 태그</li>
+		<li>th - 제목칸을 구성하는 태그</li>
+		<li>td - 칸(셀)을 구성하는 태그</li>
+		</ul>
+		<hr>
+			<table>
+			<h2>세로형 표 만들기</h2>
+			<tr>
+			<th>tag</th>
+			<th>설명</th>
+			</tr>
+				<tr>
+				<td>table</td>
+				<td>표를 구성하는 태그</td>
+				</tr>
+					<tr>
+					<td>tr</td>
+					<td>줄을 구성하는 태그</td>
+					</tr>
+						<tr>
+						<td width="100">th</td>
+						<td width="200">제목칸을 구성하는 태그<br>
+						(볼드체, 중앙정렬)
+						</td>
+						</tr>
+							<tr>
+							<td>td</td>
+							<td>칸(셀)을 구성하는 태그</td>
+							</tr>
+			</table>
+			<hr>
+			<h2>가로형 표 만들기</h2>
+			<table>
+			<tr>
+			<th>번호</th>
+			<td>001</td>
+			</tr>
+				<tr>
+				<th>이름</th>
+				<td>홍길동</td>
+				</tr>
+					<tr>
+					<th>휴대번호</th>
+					<td>010-1111-1111</td>
+					</tr>
+						<tr>
+						<th width="100">주소</th>
+						<td width="300">부산시 사하구 하신중앙로291</td>
+						</tr>
+							<tr>
+							<th>학번</th>
+							<td>20241104</td>
+							</tr>
+			</table>
+			<hr>
+			<h2>칸 합치기</h2>
+			<table>
+				<tr>
+				<th colspan="5">colspan 1</th>
+				<th>2</th>
+				<th rowspan="2">3</th>
+				<th rowspan="2">4</th>
+				<th rowspan="2">5</th>
+				<th rowspan="2">6</th>
+				</tr>
+				<tr>
+				<th>1</th>
+				<th>2</th>
+				<th>3</th>
+				<th>4</th>
+				<th>5</th>
+				<th>6</th>
+				</tr>
+			</table>
+			<hr>
+			<table>
+			<tr>
+			<td colspan="3">h</td>
+			</tr>
+			<tr>
+			<td>1</td>
+			<td>2</td>
+			<td rowspan="3">3</td>
+			</tr>
+			<tr>
+			<td>1</td>
+			<td rowspan="2">2</td>
+			</tr>
+			<tr>
+			<td>b</td>
+			</tr>
+			</table>
+	</body>
+</html>

@@ -1,0 +1,52 @@
+@charset "UTF-8";
+*{padding: 1em 1%;}
+
+.body {
+	margin:0;
+}
+
+#header {
+	background:gray;
+	line-height:40px;
+}
+
+#nav {
+	background:blue;
+	line-height:40px;
+	color:white;
+}
+
+#art {
+	line-height:40px;
+	float:left;
+	background:green;
+	padding:40px;
+	height: 100px;
+	width:660px;
+}
+
+#sec {
+	line-height:40px;
+	float:left;
+	background:skyblue;
+	padding:40px;
+	height:100px;
+	width:660px;
+}
+
+#as {
+	line-height:40px;
+	float:left;
+	background:black;
+	height:100px;
+	padding:40px;
+	color:white;
+	width:660px;
+}
+
+#foot {
+	line-height:40px;
+	padding:30px;
+	clear:both;
+	background:darkgrey;
+}

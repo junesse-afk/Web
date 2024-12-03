@@ -1,0 +1,112 @@
+﻿<!DOCTYPE>
+<html>
+<head>
+	<title>form-2</title>
+</head>
+<body>
+	<nav>
+	<a href="test07.html"><input type="button" value="테스트7"></a>
+	<a href="test07_1.html"><input type="button" value="테스트7-1"></a>
+	</nav>
+	
+	<h1>form-2</h1>
+	<hr>
+	<hr>
+	<form action="test.jsp" method="post">
+	<h3>1. input type="time" 시간(오전/오후/시/분)을 지정하는 요소</h3>
+		<p> <br>
+		<input type="time">
+		</p>
+	<hr>
+	<h3>2. input type="date" 날짜(년/월/일)를 지정하는 요소</h3>
+		<p> <br>
+		<input type="date">
+		</p>
+	<hr>
+	<h3>3. input type="datetime-local" 날짜(년/월/일/오전/오후/시/분)를 지정하는 요소</h3>
+		<p> <br>
+		<input type="datetime-local">
+		</p>
+	<hr>
+	<h3>4. input type="week" 날짜(년/주)를 지정하는 요소</h3>
+		<p> <br>
+		<input type="week">
+		</p>
+	<hr>
+	<h3>5. input type="month" 날짜(년/월)를 지정하는 요소</h3>
+		<p> <br>
+		<input type="month">
+		</p>
+	<hr>
+	<h3>6. input type="number" 숫자값을 지정하는 요소</h3>
+		<p> <br>
+		<input type="number" value="1">
+		</p>
+	<hr>
+	<h3>7. input type="number" </h3>
+		<p> min/max/step[값에 따라 묶어서] 값을 정할 수 있음<br>
+		<input type="number" min="" max=""><br>
+		<label>프로젝트 팀원 <input type="number" min="0" max="50" step="5"></label> 명 입니다.
+		</p>
+
+	<hr>
+	<h3>8. input type="range" 범위내 값을 지정하는 폼요소</h3>
+		<p> <br>
+		<input type="range"><br>
+		</p>
+
+	<hr>
+	<h3>9. input type="tel" 연락처 지정하는 폼요소</h3>
+		<p> 모바일브라우저에서 가상키패드가 숫자형식으로 바뀔 수 있고 전화 걸기 가능<br>
+		<input type="tel"><br>
+		</p>
+
+	<hr>
+	<h3>10. input type="email" 메일 지정하는 폼요소</h3>
+		<p> 브라우저에서 알맞은 이메일 형식인지 체크해줌<br>
+		<input type="email"><br>
+		</p>
+
+	<hr>
+	<h3>11. input type="url" url 지정하는 폼요소</h3>
+		<p> 브라우저에서 알맞은 url 형식인지 체크해줌<br>
+		<input type="url"><br>
+		</p>
+
+	<hr>
+	<h3>12. input type="검색용 상자를 지정하는 폼요소" </h3>
+		<p> <br>
+		<input type="search"><br>
+		</p>
+	<hr>
+	<br>
+	<h1> 서로 관련된 폼요소들을 그룹화 하기 - fieldset </h1>
+	<p><b>fieldset</b>으로 폼요소들을 묶어주고 해당의 제목(주제)은 <b>legend</b>로 묶어서 나타냄.</p>
+	<fieldset>
+		<legend>필수</legend>
+		<label>name <input type="text"></label><br>
+		<label>id <input type="text"></label>
+	</fieldset>
+	<hr>
+	<br>
+	<h1> html5 추가된 input 속성들 </h1>
+		<p>1. 자동 포커싱. 입력대기상태가 됨 - autofocus="autofocus"(autofocus)<br>
+			<input type="text" autofocus></p>
+		<p>2. 자동완성기능을 켜거나 끔 - autocomplete=on/off<br>
+			<label for="name">이름</label>
+			<input type="text" id="name" autocomplete="on"></p>
+		<p>3. 입력예시나 설명을 지정 - placeholder="입력하세요"<br>
+			<input type="text" placeholder="입력하세요"></p>
+		<p>4. 필수입력요소로 지정
+			<input type="text: required="required"></p>
+		<p>5. 읽기만 가능한 요소로 지정(입력값이 전송됨)
+			<input type="text" readOnly="readOnly"></p>
+		<p>6. 사용불가능한 요소로 지정(입력값이 전송안됨)
+			<input type="text" disabled="disabled"></p>
+	<hr>
+		<input type="color">
+		<input type="submit">
+		<input type="reset">
+	</form>
+</body>
+</html>

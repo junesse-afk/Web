@@ -1,0 +1,14 @@
+﻿<html>
+	<head>
+	<title>테이블</tile>
+	</head>
+	<body>
+	<h1>테이블 만들기</h1>
+	<table>
+	<tr>
+	<th>1<th>
+	<td>2<td>
+	</tr>
+	</table>
+	</body>
+</html>

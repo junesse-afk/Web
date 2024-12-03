@@ -1,0 +1,66 @@
+﻿<html>
+	<head>
+		<title>a로 링크 걸기-2</title>
+	</head>
+	<body>
+	<!-- nav는 메뉴 영역을 나타내는 tag임 -->
+	<nav>
+	<a href="test06.html" target="_blank">링크수업-1</a>
+	<a href="test06.html#tg">링크수업-1(target)</a>
+	<a href="test06-1.html">링크수업-2</a>
+	</nav>
+
+	<hr>
+		<h1>내부  링크 걸기</h1>
+	<hr>
+		<p>문서가 길어져서 스크롤바가 생길 때 위아래로 이동하는 내부링크를 걸 수 있다.<br>
+		<b>&lt;a href="경로"&gt; ... &lt;/a&gt;</b><br>
+		목적지(도착지) 부분의 태그에 주소로 활용할 id를 추가하고 그 id값을 주소로 지정.<br>
+		<b>&lt;tag id=" "&gt;&lt;a&gt;</p>
+	<hr>
+	<h1 id="ph">[ Photo Gallery ]</h1>
+	<nav id="nav">
+	<a href="#hr01"><input type="button" value="photo-01"></a>
+	<a href="#hr02"><input type="button" value="photo-02"></a>
+	<a href="#hr03"><input type="button" value="photo-03"></a><br>
+	<a href="#hr04"><input type="button" value="photo-04"></a>
+	<a href="#hr05"><input type="button" value="photo-05"></a>
+	<a href="#hr06"><input type="button" value="photo-06"></a><br>
+	<a href="#hr07"><input type="button" value="photo-07"></a>
+	<a href="#hr08"><input type="button" value="photo-08"></a>
+	<a href="#hr09"><input type="button" value="photo-09"></a>
+	</nav>
+	<hr>
+	<h2 id="hr01">photo-01</h2>
+		<p><img src=".\download\jpg\1.jpg" height="600"></p>
+	<hr>
+	<h2 id="hr02">photo-02</h2>
+		<p><img src=".\download\jpg\2.jpg" width="899.72" height="600"></p>
+	<hr>
+	<h2 id="hr03">photo-03</h2>
+		<p><img src=".\download\jpg\3.jpg" width="899.72" height="600"></p>
+	<hr>
+	<h2 id="hr04">photo-04</h2>
+		<p><img src=".\download\png\clip.png" width="899.72" height="600"></p>
+	<hr>
+	<h2 id="hr05">photo-05</h2>
+		<p><img src=".\download\png\delete-icon.png" width="899.72" height="600">
+		<a href="#nav"><input type="button" value="GO MENU"></a></p>
+	<hr>
+	<h2 id="hr06">photo-06</h2>
+		<p><img src=".\download\png\rabbit.png" width="899.72" height="600"></p>
+	<hr>
+	<h2 id="hr07">photo-07</h2>
+		<p><img src=".\download\png\reply-icon.png" width="899.72" height="600"></p>
+	<hr>
+	<h2 id="hr08">photo-08</h2>
+		<p><img src=".\download\gif\1166_128.gif" width="899.72" height="600">
+		<a href="#nav"><input type="button" value="GO MENU"></a></p>
+	<hr>
+	<h2 id="hr09">photo-09</h2>
+		<p><img src=".\download\gif\5873_128.gif" width="899.72" height="600"></p>
+	<hr>
+	<a href="#"><input type="button" value="TOP"></a>
+	<hr>
+	</body>
+</html>
