@@ -1,0 +1,95 @@
+﻿<html>
+	<head>
+		<title>필수 Tag</title>
+	</head>
+	<body>
+	<!-- nav는 메뉴 영역을 나타내는 tag임 -->
+	<nav>
+	<a href="test06.html" target="_blank">링크수업-1</a>
+	<a href="test06.html#tg">링크수업-1(target)</a>
+	<a href="test06-1.html">링크수업-2</a>
+	<a href="test06-1.html#ph">링크수업-2(Gallery Menu)</a>
+	</nav>
+
+	<hr>
+		<h1> a로 링크 걸기</h1>
+	<hr>
+		<p>
+		<b>&lt;a href="경로"&gt; ... &lt;/a&gt;</b><br>
+		링크 걸린 텍스트는 밑줄이 생기고 마우스오버시 커서는 손모양으로 바뀌며,
+		색상은 초기링크=파랑/활성화링크=빨강/방문한링크=보라 중에서 나타남
+		</p>
+	<hr>
+		<h2>절대 경로로 링크 걸기</h2>
+		<a href="https://www.w3schools.com/">텍스트</a><br>
+		<a href ="https://naver.com">NAVER</a>
+	<hr>
+		<h2>상대 경로로 링크 걸기</h2>
+		<ol>
+		<li> 웹페이지(*.htm/*.html)<br>
+		<a href="test05.html">이미지 수업 보기</a><br>
+		<a href="test04.html">table 수업보기</a>
+		</li>
+		</ol>
+	<hr>
+			<ol>
+			<li> 이미지(*.gif/*.jpg/*.png)<br>
+			<a href=".\download\jpg\2.jpg">photo</a><br>
+			<a href=".\download\gif\5873_128.gif">gif</a><br>
+			<a href=".\download\png\rabbit.png">rabbit.png</a><br>
+			</li>
+			<li> 영상(*.webm/*.ogg/*.mp4)<br>
+			<a href=".\download\tiny.mp4">영상</a><br>
+			<video width="320" height="240" controls>
+			<source src=".\download\tiny.mp4" type="video/mp4">
+			</video>
+			<video width="320" height="240" controls>
+			<source src=".\download\video.mp4" type="video/mp4">
+			</video>
+			</li>
+			<li> memo(*.txt)<br>
+			<a href="test04.txt">메모</a>
+			</li>
+			</ol>
+				<a href="http://www.naver.com">
+				<img src="D:\web\html\download\jpg\1.jpg" alt="" width="50%" height="200"></a>
+	<hr>
+				<p>웹브라우저가 처리 불가능한 종류를 링크 걸면 (다운로드)됨
+				<a href="index.zip">index.zip</a>
+				</p>
+	<hr>
+					<h3 id="tg">target="" 링크를 여는 방식 지정</h3>
+					<ul>
+					<li>target="_self" 기본값. 현재 위치에 링크열기</li>
+					<li><b><mark>target="_blank"</mark> 새탭에서 링크열기</b></li>
+					<li>target="_top" 프레임구조 나뉨없이 전체에서 링크열기</li>
+					<li>target="_parent" 프레임구조 상위창에서 링크열기<li>
+					</ul>
+					<a href=".\download\jpg\2.jpg" target="_blank">photo</a><br>
+					<a href=".\download\tiny.mp4" target="_blank">영상</a><br>
+					<a href="https://www.w3schools.com/" target="_blank">텍스트</a><br>
+					<a href ="https://naver.com" target="_blank">NAVER</a>
+	<hr>
+					<a href="http://www.itwillbs.co.kr" target="_blank">
+					<img src=".\download\png\logo.png" alt="" width="300" height="30"></a>
+					<a href="https://www.naver.com" target="_blanck" title="naver로 쇼핑하러 가기">						<img src=".\download\banner.jpg" alt="naver" width="300"></a>
+	<hr>
+	<h3>썸네일 이미지</h3><br>
+	<a href=".\download\jpg\1.jpg" target="_blank" title="1번 이미지 크게 보기">
+	<img src=".\download\jpg\1.jpg" width="150" height="150"></a>
+	<a href=".\download\jpg\2.jpg" target="_blank" title="원본 이미지">
+	<img src=".\download\jpg\2.jpg" width="150" height="150"></a>
+	<a href=".\download\jpg\3.jpg" target="_blank" title="말풍선 툴팁">
+	<img src=".\download\jpg\3.jpg" width="150" height="150"></a>
+	<a href=".\download\tiny.mp4">
+	<img src=".\download\jpg\1.jpg" width="150" height="150"></a>
+	<hr>
+	<h3>mailto:으로 e-mail</h3>
+	<a href="mailto:class@itwillbs.co.kr">(주)아이티윌 이메일</a>
+	<a href="mailto:class@itwillbs.co.kr">class@itwillbs.co.kr</a>
+	<a href="mailto:junesse89@gmail.com"><img src=".\download\jpg\3.jpg" width="150" height="150"></a>
+
+	<a href="#">TOP</a>
+
+	</body>
+</html>

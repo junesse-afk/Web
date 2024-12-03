@@ -1,0 +1,71 @@
+﻿<!DOCTYPE>
+<html>
+	<head>
+	<title>form-test</title>
+	</head>
+	<body>
+		<h1>ITWILL 회원가입</h1>
+		<input type="text" value="자바(JAVA) 개발자 양성" readOnly="readOnly">과정
+		<form action="http://formtest_이재준.htm" method="post">
+			<fieldset>
+			<legend>[필수 입력]</legend>
+			♣ 이름 <input type="text" required><br>
+			♣ 아이디 <input type="text" placeholder="6~10자 영문과 숫자 조합" minlength="6" maxlength="10" required><br>
+			♣ 비밀번호 <input type="password" placeholder="8~12자 영문,숫자,특수문자" minlength="8" maxlength="12" required><br>
+			<br>
+			♣ 성별<br>
+			<label><input type="radio" name="gender">남</label><br>
+			<label><input type="radio" name="gender" checked="checked">여</label><br>
+			<label><input type="radio" name="gender">기타</label><br>
+			<br>t
+			♣ 생년월일 <input type="date"><br>
+			♣ 전화번호 <input type="tel" placeholder="(예시)010-777-8888"><br>
+			♣ 이메일 <input type="email">	
+			<hr>
+			♣ 아이티윌부산이 제공하는 정보를 받으시겠습니까?<br>
+			<label><input type="radio" name="data" checked="checked">받습니다</label><br>
+			<label><input type="radio" name="data">받지 않겠습니다</label><br>
+			<br>
+			♣ 정보나 이벤트 소식을 어떻게 받으시겠습니까?<br>
+			<input type="checkbox" checked="checked">이메일
+			<input type="checkbox">문자
+			<input type="checkbox" checked="checked">카카오톡
+			<input type="checkbox">우편
+			<br>
+			<fieldset>
+			<legend>[선택 입력]</legend>
+			♣ 자기소개를 해주세요<br>
+			<textarea cols="50" rows="4">간단히 작성하세요</textarea><br>
+			<br>
+			♣ 블로그 주소 <input type="url"><br>
+			<br>
+			♣ 학과를 선택해주세요<br>
+			<select>
+				<option>컴퓨터공학과</option>
+				<option selected>산업공학과</option>
+				<option>기계공학과</option>
+				<option>화학공학과</option>
+				<option>전기전자공학과</option>
+				<option>건축공학과</option>
+			</select><br>
+			<br>
+			♣ 취미, 특기를 선택해주세요<br>
+			<select multiple>
+				<optgroup label="취미">
+				<option>등산</option>
+				<option>여행</option>
+				<option selected>요리</option>
+				<option>게임</option></optgroup>
+				<optgroup label="특기">
+				<option>운동</option>
+				<option>바둑</option>
+				<option selected>음악</option>
+				<option>무용</option></optgroup>
+			</select multiple>
+			</fieldset>
+			<button type="submit"><img src="./star.gif">가입</button>
+			<button type="reset"><img src="./star.gif">취소</button>
+		</form>
+
+</body>
+</html>
