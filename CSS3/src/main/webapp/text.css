@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+/* 1. text-align: ; 글자의 수평 정렬  */
+.ta01, .ta02, .ta03 {
+	text-align: left;
+	border: 1px solid #06a;
+	width: 400px;
+}
+
+.ta02 {
+	text-align: center;
+}
+
+.ta03 {
+	text-align: right;
+}
+
+.ta04 {
+	text-align: justify;
+}
+
+form {
+	background: #ccc;
+	width: 600px; height: 100px;
+	text-align: center;
+}
+
+
+.in01 {
+	border: 2px solid #05a;
+	padding: 0.5em;
+	text-align: left;
+}
+
+.in02 {
+	text-align: center;
+	
+}
+
+.in03 {
+	text-align: right;
+}
+
+/* text-decoration: ; 글자의 줄들  */
+
+.td01 {
+	text-decoration: overline;
+}
+
+.td02 {
+	text-decoration: line-through;
+}
+
+.td03 {
+	text-decoration: underline;
+}
+
+
+/* 3. text-indent: ; 들여쓰기 */
+
+.ti01 {
+	text-indent: 16px;
+}
+
+.ti02 {
+	text-indent: 2em;
+}
+
+.ti03 {
+	text-indent: 10%;
+}
+
+.ti04:hover {
+	text-indent: -100px;
+}
+
+
+/* 4. text-indent: ; 들여쓰기 */
+
+.tt01 {
+	text-transform: none;
+}
+
+.tt02 {
+	text-transform: lowercase;
+}
+
+.tt03 {
+	text-transform: uppercase;
+}
+
+.tt04 {
+	text-transform: capitalize;
+}
