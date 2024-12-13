@@ -1,0 +1,29 @@
+@charset "UTF-8";
+section {width: 45%; height: 300px;
+font-size: 20px;
+line-height: 1;
+display: inline-block;
+vertical-align: top;}
+
+#sec01 {overflow: visible;}
+#sec02 {overflow: hidden;}
+#sec03 {overflow: scroll;}
+#sec04 {overflow: auto;}
+#sec03:hover, #sec04:hover
+{height: 700px;}
+
+article {border: 6px solid #9c0;
+width: 400px; height: 300px;
+/* overflow: auto */;}
+
+/* article>p>i */
+article>p {
+/*
+A>B는 상위요소 A의 바로 아래헤 있는 하위요소 B를 지정 (부모자식)
+A B는 상위요소 A의 아래에 있는 모든 하위요소 중 B를 지정 (조상자손)
+*/
+font-size: 20px;
+font-weight: bold;
+text-transform: uppercase;
+text-align: center;
+}
