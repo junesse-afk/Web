@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+ul {
+	list-style: none;
+}
+
+li {
+	margin: 10px;
+	border: 1px solid;
+}
+
+section:not(#sec03) {
+	display:inline-block;
+}
+
+/* 1. display:inline; */
+#sec01>.bl {
+	border:1px solid #00f;
+/* 	width: 200px; */
+	display:inline; /* 가로정렬 */
+	
+}
+
+/* 2. display:block; */
+#sec02>.in {
+	border:1px solid #00f;
+	width: 300px; height:50px;
+	margin: 30px;
+	display:block; /* 세로정렬 */
+}
+
+/* 3. display:inline-block; */
+#sec03 *:not(h2) {
+	border:1px solid #00f;
+	display:inline-block;
+}
+
+#sec01, #sec02 {
+	width:45%;
+	vertical-align: top;
+	display: inline-block;
+}
+
+/* 4. display:none; */
+/* #sec03:hover { */
+/* 	display: none; */
+/* } */
+
+/* #sec03 *:not(h2) {
+	width:45%;
+	vertical-align:top;
+	border:1px solid #00f;
+	display:inline-block;
+	
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#sec04>*:not(section, h2) {
+	border: 1px solid black;
+	display: inline-block;
+}
+
+#sec04>b {
+	background-color: #f4a;
+	padding: 1em;
+	display: none;
+}
+
+#sec04>div {
+	background-color: skyblue;
+	padding: 1.5em;
+	display: none;
+}
+
+#sec04:hover>b {
+	display: block;
+}
+
+
+#sec04:hover>div {
+	background-color: skyblue;
+	padding: 1.5em;
+	display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

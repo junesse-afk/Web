@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+body {
+	margin: 0px;
+}
+
+li {
+	list-style-type: none;
+}
+
+/* 1. margin의 방향별 적용 */
+
+#mg {
+	border: 1px solid;
+	margin:40px;
+}
+
+
+#ul-mg01 li {
+	border: 1px solid #060;
+}
+
+.mt {
+	margin-top: 3em;
+}
+
+.mr {
+	text-align: right;
+	margin-right: 3em;
+}
+
+.mb {
+	margin-bottom: 3em;
+}
+
+.ml {
+	margin-left: 5em;
+}
+
+/* 2. marign의 값 갯수별 적용법 */
+#ul-mg02 li {
+	border: 1px solid #600;
+}
+
+.m01 {
+	margin: 50px;
+}
+.m02 {
+	margin: 50px 20%;
+}
+
+.m03 {
+	margin: 50px 20% 80px;
+}
+
+.m04 {
+	/* 위아래 마진이 다를때 큰값으로 적용됨 */
+	margin: 50px 30% 30px 20%;
+}
+
+#cnt {
+	font-size: 50px;
+	font-weight: bold;
+	background-color: #edf;
+	width: 300px;
+	padding: 0.3em;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	/* magin: auto;[두번째값을 오토] */
+}
+
+#cnt>span {
+	font-size: 16px;
+	text-transform: none;
+}
+
+
+#cnt>span>b {
+	color: #900;
+}
+
+/* form에서 margin 활용 */
+fieldset {
+	margin: auto;
+	width: 300px;
+}
+
+#id {
+	margin-left: 27px;
+}
+
+#sbm {
+	margin: auto;
+}
+
+table {
+	margin: auto;
+	border: 1px solid;
+	width: 500px; height: 400px;
+}
+
+#brd a {
+	padding: 7px 13px;
+	background-color: green;
+	text-decoration: none;
+	line-height:1.8;
+}
+
+#brd a:hover {
+	
+	color: yellow;
+}
+
+nav {
+	margin: 1em auto;
+	text-align: center;
+	font-size: 1.5em;
+}

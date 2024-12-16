@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>padding</title>
+<link href="style.css" rel="stylesheet">
+<link href="padding.css" rel="stylesheet">
+</head>
+<body>
+<h1>padding - 요소의 내부 여백</h1>
+ <p id="pd">padding</p>
+
+<h2>1. padding의 방향별 적용</h2>
+<ul id="ul-pd01">
+ <li class="pt">padding-top: n ; 위에 n만큼 적용</li>
+ <li class="pr">padding-right: n ; 우측에 n만큼 적용</li>
+ <li class="pb">padding-bottom: n ; 아래에 n만큼 적용</li>
+ <li class="pl">padding-left: n ;<br> 좌측에 n만큼 적용</li>
+</ul>
+
+<h2>2. padding의 값 갯수별 적용법</h2>
+<ul id="ul-pd02">
+ <li class="p01">padding: n ; 양사방 n으로 동일</li>
+ <li class="p02">padding: n n ; 상하, 좌우가 서로 동일</li>
+ <li class="p03">padding: n n n ; 상, 좌우, 하 순으로 적용</li>
+ <li class="p04">padding: n n n n ; 상, 우, 하, 좌 순으로 적용</li>
+</ul>
+
+<form action="test.jsp">
+	<fieldset>
+	<legend>who</legend>
+		<label for="name" class="lb1">name</label>
+		<input type="text" id="name"><br>
+		<label for="id" class="lb2">id</label>
+		<input type="text" id="id"><br>
+		<input type="submit" id="sbm">
+	</fieldset>
+</form>
+<h3>/* a에서의 padding 활용(board)*/</h3>
+<div id="brd">
+<table><th>board</th></table>
+<nav>
+	<a href="#">1</a>
+	<a href="#">2</a>
+	<a href="#">3</a>
+	<a href="#">4</a>
+	<a href="#">5</a>
+	<a href="#">6</a>
+	<a href="#">7</a>
+	<a href="#">8</a>
+	<a href="#">9</a>
+	<a href="#">10</a>
+</nav>
+</div>
+
+<h3>/* img에서의 padding 활용(board)*/</h3>
+<div id="brd2">
+<img src="download/jpg/1.jpg" class="ph01">
+<img src="download/jpg/2.jpg" class="ph02">
+<img src="download/jpg/3.jpg" class="ph03">
+</div>
+
+
+
+
+
+
+</body>
+</html>
